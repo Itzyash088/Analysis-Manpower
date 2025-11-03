@@ -1,0 +1,18 @@
+{
+  "name": "manpower-analysis-system",
+  "version": "1.0.0",
+  "description": "Analysis of Manpower and Technology Requirements in Software Development",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "cd server && node index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["cocomo", "fpa", "manpower", "estimation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

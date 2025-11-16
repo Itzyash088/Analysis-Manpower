@@ -58,7 +58,7 @@ const ProjectForm = ({ onSubmit, loading }) => {
 
   useEffect(() => {
     // Fetch options from API (will override defaults if available)
-    fetch('/api/options')
+    fetch('https://analysis-manpower.vercel.app/api/options')
       .then(res => {
         if (!res.ok) throw new Error('API not available');
         return res.json();

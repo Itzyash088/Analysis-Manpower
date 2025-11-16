@@ -14,7 +14,7 @@ function App() {
     setResults(null);
 
     try {
-      const response = await fetch('/api/estimate', {
+      const response = await fetch('https://analysis-manpower.vercel.app/api/estimate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
